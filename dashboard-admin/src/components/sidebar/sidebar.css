@@ -1,0 +1,116 @@
+#sidebar{
+    background: #020509;
+    grid-area: sidebar;
+    overflow-y: auto;
+    padding: 20px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.sidebarTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f3f4f6;
+    margin-bottom: 30px;
+}
+
+.sidebarImg{
+    display: flex;
+    align-items: center;
+}
+
+.sidebarTitle > div > img{
+    width: 55px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.sidebarTitle > div > h1{
+    font-size: 18px;
+    display: inline;
+    margin-left: 15px;
+}
+
+.sidebarTitle > i{
+    font-size: 18px;
+    display: none;
+}
+
+.sidebarMenu > h2{
+    color: #3ea175;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 0 10px;
+    font-weight: 700;
+}
+
+.sidebarLink{
+    color: #f3f4f6;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.activeMenuLink{
+    background: rgba(62, 161, 117, 0.3);
+    color: #3ea175;
+}
+
+.activeMenuLink .Link{
+    color: #3ea175 !important;
+}
+
+.sidebarLink > .Link{
+    text-decoration: none;
+    color: #a5aaad;
+    font-weight: 700;
+}
+
+.sidebarLink .Link:focus{
+    padding: 7px;
+    background: rgba(62, 161, 117, 0.3);
+    border-radius: 5px;
+}
+
+.sidebarLink > i{
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.sidebarLogout{
+    margin-top: 20px;
+    padding: 10px;
+    color: #e65061;
+}
+
+.sidebarLogout > .Link{
+    text-decoration: none;
+    color: #e65061;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.sidebarLogout > i{
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+
+.sidebar-responsive{
+    display: inline !important;
+    z-index: 10 !important;
+    left: 0 !important;
+    position: absolute;
+}
+
+@media only screen and (max-width: 978px){
+    #sidebar{
+        display: none;
+    }
+
+    .sidebarTitle > i{
+        display: inline;
+    }
+}
