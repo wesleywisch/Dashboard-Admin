@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './sidebar.css';
-import Logo from './assests/avatarFoto.png'
+import Avatar from '../../assests/avatarFoto.png';
 
 
 export default function Sidebar({ sidebarOpen, closeSidebar }){
@@ -10,12 +10,12 @@ export default function Sidebar({ sidebarOpen, closeSidebar }){
         <div className={sidebarOpen ? 'sidebar-responsive' : ''} id="sidebar">
             <div className="sidebarTitle">
                 <div className="sidebarImg">
-                    <img src={Logo} alt="Logo" />
-                    <h1>Dashboard-admin</h1>
+                    <img src={Avatar} alt="Logo" />
+                    <h1>Administrador</h1>
                 </div>
 
                 <i 
-                onClick={ () => {  }}
+                onClick={ () => closeSidebar()}
                 className="fa fa-times"
                 id="sidebarIcon"
                 aria-hidden="true"
