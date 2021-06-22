@@ -5,7 +5,7 @@ import './sidebar.css';
 import Avatar from '../../assests/avatarFoto.png';
 
 
-export default function Sidebar({ sidebarOpen, closeSidebar }){
+export function Sidebar({ sidebarOpen, closeSidebar }){
     return(
         <div className={sidebarOpen ? 'sidebar-responsive' : ''} id="sidebar">
             <div className="sidebarTitle">
