@@ -62,7 +62,7 @@ export function Main(){
                                 <h1>Daily Reports</h1>
                                 <p>Rio de Janeiro, Rio de Janeiro, BR</p>
                             </div>
-                            <i className="fa fa-usd"></i>
+                            <i className="fa fa-dollar-sign"></i>
                         </div>
                         {/* <Chart /> */}
                     </div>
@@ -73,7 +73,7 @@ export function Main(){
                                 <h1>Daily Reports</h1>
                                 <p>Rio de Janeiro, Rio de Janeiro, BR</p>
                             </div>
-                            <i className="fa fa-area-chart"></i>
+                            <i className="fa fa-chart-area"></i>
                         </div>
 
                         <div className="chartsRightCards">
