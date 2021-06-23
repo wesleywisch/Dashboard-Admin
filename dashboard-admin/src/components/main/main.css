@@ -1,0 +1,50 @@
+main{
+    background: #f3f4f6;
+    grid-area: main;
+    overflow-y: auto;
+}
+
+.mainContainer{
+    padding: 20 35px;
+}
+
+.mainTitle{
+    display: flex;
+    align-items: center;
+}
+
+.mainTitle > img{
+    max-height: 100px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.mainGreenting > h1{
+    font-size: 24px;
+    color: #2e4a66;
+    margin-bottom: 5px;
+}
+
+.mainGreenting > p{
+    font-size: 14px;
+    font-weight: 700;
+    color: #a5aaad;
+}
+
+.mainCards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70px;
+    padding: 25px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #fff;
+}
