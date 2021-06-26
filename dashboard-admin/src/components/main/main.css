@@ -2,6 +2,7 @@ main{
     background: #f3f4f6;
     grid-area: main;
     overflow-y: auto;
+    padding: 35px;
 }
 
 .mainContainer{
@@ -46,7 +47,7 @@ main{
     padding: 25px;
     border-radius: 8px;
     background: #fff;
-    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #fff;
+    box-shadow: 2px 2px 5px #ededed, -2px -2px 5px #fff;
 }
 
 .cardInner{
@@ -56,7 +57,7 @@ main{
 }
 
 .cardInner > span{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .charts{
@@ -70,7 +71,7 @@ main{
     padding: 25px;
     border-radius: 8px;
     background: #fff;
-    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #fff;
+    box-shadow: 2px 2px 5px #ededed, -2px -2px 5px #fff;
 }
 
 .chartsLeftTitle{
@@ -102,11 +103,18 @@ main{
     padding: 15px;
 }
 
+.chartsRightCards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
 .chartsRight{
     padding: 25px;
     border-radius: 8px;
     background: #fff;
-    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #fff;
+    box-shadow: 2px 2px 5px #ededed, -2px -2px 5px #fff;
 }
 
 .chartsRightTitle{
@@ -134,13 +142,6 @@ main{
     border-radius: 200px 0 200px 200px;
     border: 0px solid #000;
     padding: 15px;
-}
-
-.chartsRightCards{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-top: 30px;
 }
 
 .card1{

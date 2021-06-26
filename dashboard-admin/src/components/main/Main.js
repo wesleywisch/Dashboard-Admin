@@ -1,6 +1,6 @@
 import hello from '../../assests/hello.png';
 
-// import Chart from '../charts/Chart';
+import { Chart } from '../charts/Chart';
 import './main.css';
 
 
@@ -64,7 +64,7 @@ export function Main(){
                             </div>
                             <i className="fa fa-dollar-sign"></i>
                         </div>
-                        {/* <Chart /> */}
+                        <Chart />
                     </div>
 
                     <div className="chartsRight">
