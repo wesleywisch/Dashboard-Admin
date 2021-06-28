@@ -199,3 +199,15 @@ main{
         margin-top: 30px;
     }
 }
+
+@media only screen and (max-width: 460px){
+    .mainGreeting > h1{
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .mainGreeting > h1{
+        font-size: 15px;
+    }
+}
