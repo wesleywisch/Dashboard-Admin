@@ -4,8 +4,8 @@ const app = express();
 const path = require('path');
 const mongoose = require('mongoose');
 
-// const userRouter = require('./Config/routes/userRouter');
-// const adminRouter = require('./Config/routes/adminRouter');
+const userRouter = require('./Config/routes/userRouter');
+const adminRouter = require('./Config/routes/adminRouter');
 
 
 mongoose.connect(process.env.MONGO_CONNECT_URL, 
@@ -20,9 +20,9 @@ mongoose.connect(process.env.MONGO_CONNECT_URL,
 
 app.use(express.static(path.join(__dirname, 'Front')));
 
-app.use('/', express.json(),);
+app.use('/user', express.json(), userRouter);
 
-app.use('/admin', express.json(),);
+app.use('/admin', express.json(), adminRouter);
 
 app.listen(3000, () =>{
     console.log('Servidor rodando');
