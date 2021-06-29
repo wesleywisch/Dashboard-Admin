@@ -1,0 +1,50 @@
+nav{
+  background: #2d0dfdc4;
+}
+  
+header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+  height: 80px;
+}
+  
+header h1{
+  color: white;
+  margin-left: 3%;
+  padding: 10px 0;
+}
+  
+header nav ul{
+  display: flex;
+  color: white;
+  font-size: 1.3em;
+}
+  
+header nav ul li{
+  list-style: none;
+  margin-left: 10px;
+}
+  
+header nav ul li a{
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1em;
+  padding: 12px;
+  transition: all 250ms linear 0s;
+  border-radius: 20px;
+}
+  
+header nav ul li a:hover{
+  color: white;
+  background-color: rgb(0, 93, 241);
+}
+
+@media screen and (max-width:1500px) {
+    header .container{
+      max-width: 800px;
+    }
+}

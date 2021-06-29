@@ -1,34 +1,29 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { Link, useHistory, useLocation } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
 
-import AuthButton from '../components/Button/authButton';
+import { Header } from '../components/Header/header';
+import { MainPagePrincipal } from '../components/MainPagePrincipal/MainPagePrincipal';
 
-export function Home(){
-    const login = useSelector(state=>state);
+
+export function Home() {
+    const login = useSelector(state => state);
 
     const history = useHistory();
     const location = useLocation();
 
-    useEffect( () =>{
+    useEffect(() => {
         let { from } = location.state || { from: { pathname: "/" } }
-        if(login){
+        if (login) {
             history.replace(from)
         }
     }, [login])
 
 
-    return(
-        <nav className="nav">
-            <h1>Wesley</h1>
-            <div>
-                <ul className="nav-links">
-                    <AuthButton></AuthButton>
-                    <li> <Link to="/">Home</Link> </li>
-                    <li> <Link to="/admin">Admin</Link> </li> 
-                    {/* sempre usamos o Link e não o (a) mesmo do html para evitar que a página toda seja recaregada */}
-                </ul>
-            </div>
-        </nav>
+    return (
+        <div>
+            <Header />
+            <MainPagePrincipal />
+        </div>
     )
 }

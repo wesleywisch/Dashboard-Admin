@@ -1,0 +1,272 @@
+.Principal > .Bg-Img > img{
+    width: 100%;
+    height: 700px;
+}
+
+.FormPagamentos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+
+.FormPagamentos img{
+    position: absolute;
+    margin-top: 1.5%;
+    margin-left: 2%;
+    width: 60px;
+    align-items: center;
+}
+
+.entrega{
+    width: 480px;
+    height: 120px;
+    background: rgba(0, 0, 0, 0.76);
+    margin-right: 40px;
+    border-radius: 0 30px 0 30px;
+}
+
+.entrega .text{
+    position: absolute;
+    margin-left: 6%;
+    margin-top: 1.5%;
+    color: white;
+}
+
+.pagamento{
+    width: 480px;
+    height: 120px;
+    background: red;
+    margin-right: 40px;
+    border-radius: 30px 0 30px 0;
+}
+
+.pagamento .text{
+    position: absolute;
+    margin-left: 6%;
+    margin-top: 1.5%;
+    color: white;
+}
+
+.seguranca{
+    width: 480px;
+    height: 120px;
+    background: peru;
+    border-radius: 0 30px 0 30px;
+}
+
+.seguranca .text{
+    position: absolute;
+    margin-left: 6%;
+    margin-top: 1.5%;
+    color: white;
+}
+
+.divOpçoes{
+    margin-top: 3%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.opçoes{
+    max-width: 900px;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.opçoes .active{
+    border-bottom: 4px solid blue;
+    padding-bottom: 8px;
+}
+
+.navOpçoes{
+    display: flex;
+    margin-top: 3%;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.acessorios{
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin-left: 3%;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 5px rgb(167, 164, 164), -2px -2px 5px #fff;
+}
+
+.acessorios .desconto{
+    position: absolute;
+    width: 65px;
+    height: 35px;
+    color: white;
+    font-size: 1.6em;
+    border-radius: 0 0 .8rem 0;
+    background: darkblue;
+}
+
+.acessorios img{
+    width: 320px;
+}
+
+.acessorios button{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-size: 3em;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: lightgrey;
+    color: black;
+}
+
+.bolas{
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin-left: 3%;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 5px rgb(167, 164, 164), -2px -2px 5px #fff;
+}
+
+.bolas .desconto{
+    position: absolute;
+    width: 65px;
+    height: 35px;
+    color: white;
+    font-size: 1.6em;
+    border-radius: 0 0 .8rem 0;
+    background: darkblue;
+}
+
+.bolas img{
+    width: 320px;
+}
+
+.bolas button{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-size: 3em;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: lightgrey;
+    color: black;
+}
+
+.chuteiras{
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin-left: 3%;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 5px rgb(167, 164, 164), -2px -2px 5px #fff;
+}
+
+.chuteiras .desconto{
+    position: absolute;
+    width: 65px;
+    height: 35px;
+    color: white;
+    font-size: 1.6em;
+    border-radius: 0 0 .8rem 0;
+    background: darkblue;
+}
+
+.chuteiras img{
+    width: 320px;
+}
+
+.chuteiras button{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-size: 3em;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: lightgrey;
+    color: black;
+}
+
+.luvas{
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin-left: 3%;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 5px rgb(167, 164, 164), -2px -2px 5px #fff;
+}
+
+.luvas .desconto{
+    position: absolute;
+    width: 65px;
+    height: 35px;
+    color: white;
+    font-size: 1.6em;
+    border-radius: 0 0 .8rem 0;
+    background: darkblue;
+}
+
+.luvas img{
+    width: 320px;
+}
+
+.luvas button{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-size: 3em;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: lightgrey;
+    color: black;
+}
+
+@media only screen and (max-width:1600px){
+    .FormPagamentos{
+        display: block;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .entrega{
+        margin-bottom: 2%;
+    }
+
+    .entrega .text{
+        margin-left: 14%;
+        margin-top: 2%;
+    }
+
+    .pagamento{
+        margin-bottom: 2%;
+    }
+
+    .pagamento .text{
+        margin-left: 14%;
+        margin-top: 2%;
+    }
+
+    .seguranca .text{
+        margin-left: 14%;
+        margin-top: 2%;
+    }
+}
+
+@media only screen and (max-width:1500px){
+    .navOpçoes{
+        display: block;
+        margin-left: 50%;
+        transform: translateX(-40%);
+        margin-top: 5%;
+    }
+
+    .acessorios{
+        margin-bottom: 3%;
+    }
+}
