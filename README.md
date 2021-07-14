@@ -23,7 +23,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 
 ```
 # Clone este repositório
-$ git https://github.com/wesleywisch/Dashboard-Admin.git
+$ git clone https://github.com/wesleywisch/Dashboard-Admin.git
 
 # Acesse a pasta do projeto no terminal
 $ cd dashboard-admin
